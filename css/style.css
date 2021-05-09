@@ -20,12 +20,6 @@ header::after,section::after,footer::after{
     display: block;
     clear: both;
 }
-
-.active{
- 
-    border-bottom:black;
-}
-
 img{
     max-width: 100%;    
 }
