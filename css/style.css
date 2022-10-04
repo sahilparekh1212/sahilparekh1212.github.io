@@ -206,9 +206,15 @@ nav .btn:hover,nav .btn:focus{
     background: rgba(0, 0, 0,0.2);
 }
 
-.currentTab{
-    color:Green;
+#currentTab i{
+    color:green;
 }
+
+#currentTab h4{
+    color:green;
+}
+
+
 
 /*Footer_________________________________________________________*/
 
