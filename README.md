@@ -1,4 +1,3 @@
-# sahilparekh1212.github.io
 Project Id: Multipage Responsive HTML & CSS Only Project
 
 Project Description: 
