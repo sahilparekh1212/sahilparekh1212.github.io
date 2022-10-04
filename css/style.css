@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
 
 /*Defaults_________________________________________________________*/
 *{
@@ -20,6 +20,7 @@ header::after,section::after,footer::after{
     display: block;
     clear: both;
 }
+
 img{
     max-width: 100%;    
 }
@@ -87,6 +88,7 @@ h2,h3,p{
     max-width: 250px;
     width: 100%;
     min-width: 200px;
+    padding:0.5rem;
 }
 
 .form-showcase h2{
@@ -152,11 +154,12 @@ nav ul li a:hover,nav ul li a:focus{
 }
 
 nav ul i{
-    margin: 0.8em 0.5em 0.8em;
+    margin: 0.65em 0.5em 0.65em;
 }
 
 nav h4{
     display: inline-block;
+    padding-right: 0.8rem;
 }
 
 nav .btn{
@@ -201,6 +204,10 @@ nav .btn:hover,nav .btn:focus{
     transition: 120ms ease-in;
     border: 1px solid white;
     background: rgba(0, 0, 0,0.2);
+}
+
+.currentTab{
+    color:Green;
 }
 
 /*Footer_________________________________________________________*/
@@ -268,6 +275,10 @@ nav .btn:hover,nav .btn:focus{
     position: relative;
     margin: 0.8em auto auto ;
     max-width: 85%;
+}
+
+.p-1{
+    padding: 0 1rem;
 }
 
 .section2 h2{
