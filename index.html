@@ -32,9 +32,6 @@
     </header>
     <section>
         <div class="section1 header-indexpg">
-            <div class="header-indexpgbuttons">
-                <a id="greeting">Greeting</a>
-            </div>
             <h2>Welcomed to a<span>Responsive Website</span></h2>
         </div>
     </section>
@@ -119,22 +116,6 @@
             </div>
         </div>
     </footer>
-
-
-    <script>
-        function mygreeting() {
-            let hour = new Date().getHours();
-            const greeting = document.getElementById('greeting');
-            if (hour < 12) {
-                greeting.textContent = 'Good Morning';
-            } else if (hour < 18) {
-                greeting.textContent = 'Good Afternoon';
-            } else {
-                greeting.textContent = 'Good Evening';
-            }
-        }
-        mygreeting();
-    </script>
 </body>
 
 </html>
