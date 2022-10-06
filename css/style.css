@@ -10,8 +10,8 @@
 }
 
 :root{
-    --primary-color:#80c3f0;
-    --secondary-color:#00E0BF;
+    --primary-color:rgb(128, 195, 240);
+    --secondary-color:rgb(0, 224, 191);
     font-size: 17.5px;
  }
 
@@ -19,6 +19,14 @@ header::after,section::after,footer::after{
     content: "";
     display: block;
     clear: both;
+}
+
+.sectionTitle{
+    background-color: rgba(128, 195, 240,0.6);
+    margin-bottom: 0.5em;
+    padding:0.5em;
+    text-align: center;
+    border-radius: 5px;
 }
 
 img{
@@ -89,6 +97,13 @@ h2,h3,p{
     width: 100%;
     min-width: 200px;
     padding:0.5rem;
+    border: 0;
+    border-radius: 3px;
+}
+
+.form-input>input:focus{ 
+    outline: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0,0.3);
 }
 
 .form-showcase h2{
@@ -103,16 +118,6 @@ h2,h3,p{
     margin:0.5em;
 }
 
-.form-input>input{
-    border: 0;
-    border-radius: 3px;
-}
-
-.form-input>input:focus{ 
-    outline: none;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0,0.3);
-}
-
 form .btn{
     margin-left: 0.5em;
 }
@@ -123,7 +128,6 @@ form .btn{
     justify-content:center;
     align-items: center;
     text-align: center;
-    margin: 1em;
     gap: 1em;
 }
 
@@ -336,11 +340,12 @@ nav .btn:hover,nav .btn:focus{
     flex:1 1 25em;
 }       
 .grid-item{
-    height: 20em;
+    height: 18.5em;
     width:auto;
     background-size: cover;
     text-align: center;
     position: relative;
+    border-radius: 10px;
 }
 
 .grid-item1{
@@ -382,7 +387,7 @@ nav .btn:hover,nav .btn:focus{
 }
 
 /*AboutPage_________________________________________________________*/
-.header-aboutpg{    
+.header-aboutPage{    
     padding: 8rem 3rem 8rem;
     position: relative;
     z-index: 99;
@@ -392,63 +397,63 @@ nav .btn:hover,nav .btn:focus{
     background:var(--primary-color); 
 }
 
-.header-aboutpg .card{
+.header-aboutPage .card{
     max-width: 250px;
 }
 
-.header-aboutpg h2{
+.header-aboutPage h2{
     margin-bottom: 0.25em;
 }
 
-.aboutpg-container{
+.aboutPage-container{
     max-width: 75%;
     margin: 50px auto auto;
 }
 
-.aboutpg-container>h2{
-    margin:1em;
+.aboutPage-container>h2{
+    margin-bottom:0.2em;
     text-align: center;
     font-weight: bolder;
 }
 
-.aboutpg-col .btn{
+.aboutPage-col .btn{
     border: 1px solid black;
 }
 
-.aboutpg-col{ 
+.aboutPage-col{ 
     padding: 0.8em; 
 }
-.aboutpg-col1{        
+.aboutPage-col1{        
     background-color: rgb(204, 198, 255);
 }
-.aboutpg-col2{
+.aboutPage-col2{
     background-color: rgb(255, 191, 191);
 }
 
-.my-grid{
+.flexWrap{
     display: flex;
     flex-wrap: wrap;
 }
-.my-grid>*{
+.flexWrap>*{
     flex:1 1 30ch;
 }
 
-.aboutpg-col3{
+.aboutPage-col3{
     background-color: rgb(191, 255, 191);
 }
 
-.aboutpg-col1 .btn,.aboutpg-col2 .btn,.aboutpg-col3 .btn{
+.aboutPage-col1 .btn,.aboutPage-col2 .btn,.aboutPage-col3 .btn{
     width: fit-content;
     background-color:var(--primary-color);
     color: var(--primary-color);
     font-weight: bolder;
     color: white;
 }
-.aboutpg-col1 .btn:hover,.aboutpg-col2 .btn:hover,.aboutpg-col3 .btn:hover{
+.aboutPage-col1 .btn:hover,.aboutPage-col2 .btn:hover,.aboutPage-col3 .btn:hover{
     transform: scale(1.1);
 }
 
-.aboutpg-container i{
+.aboutPage-container i{
     padding:0.5em 0.5em 0.5em 0;
 }
 
@@ -471,8 +476,7 @@ nav .btn:hover,nav .btn:focus{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     justify-content: space-between;
-    align-items: center;
-    gap: 1em;
+    gap: 0.5em;
     text-align: center;
 }
 
@@ -482,19 +486,17 @@ nav .btn:hover,nav .btn:focus{
 }
 
 /*Contact Page_________________________________________________________*/
-.header-contactpg{
-    padding: auto;
+.header-contactPage{
+    padding: 8rem 3rem 8rem;
     position: relative;
     z-index: 99;
-    min-height: 30vh;
     height: auto;
+    min-height: 30vh;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color:var(--primary-color);
+    background:var(--primary-color); 
 }
 
-.header-contactpg h2{
+.header-contactPage h2{
     margin-bottom:0.25em;
     text-align: center;
     font-weight: bolder;
@@ -548,7 +550,7 @@ nav .btn:hover,nav .btn:focus{
         display: inline-block;
     }
 
-    .header-aboutpg,.header-contactpg{
+    .header-aboutPage,.header-contactPage{
         min-height: 40vh;
         padding-bottom: 11rem;
     }
@@ -558,7 +560,7 @@ nav .btn:hover,nav .btn:focus{
         padding-bottom: 13.5rem;
     }
 
-    .showcase,.aboutpg-container{
+    .showcase,.aboutPage-container{
         margin-top:1rem;
     }
 

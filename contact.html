@@ -1,89 +1,103 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Website/About</title>
+    <title>HTML-CSS Project</title>
 </head>
+
 <body>
+
     <header>
         <div class="headeritems">
             <h2>Logo</h2>
             <nav>
                 <ul>
-                    <li class="btn"><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i><h4>Home</h4></a></li>
-                    <li id="currentTab" class="btn"><a href="./contact.html"><i class="fas fa-phone-alt"></i><h4>Contact</h4></a></li>
-                    <li class="btn"><a href="./about.html"><i class="fas fa-info"></i><h4>About</h4></a></li>
+                    <li class="btn"><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>
+                            <h4>Home</h4>
+                        </a></li>
+                    <li id="currentTab" class="btn"><a href="./contact.html"><i class="fas fa-phone-alt"></i>
+                            <h4>Contact</h4>
+                        </a></li>
+                    <li class="btn"><a href="./about.html"><i class="fas fa-info"></i>
+                            <h4>About</h4>
+                        </a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <section>
-        <div class="section1 header-aboutpg">
-            <h2>Welcome To Contact Page<span>Lorem ipsum dolor sit amet consectetur adipisicing</span></h2>
-        </div>
-    </section>
 
-    <section class="showcase">
-        <div class=" grid-of2 container">
-            <div class="showcase-text" >
-                <h2>Details</h2>
-                <p>Lorem ipsum dolor sit amet consectetur ferendis hic sequi necessitatibus tenetur repudiandae mollitia eaque autem sint optio, inventore non sunt corporis quis fugit? Vitae, praesentium accusantium esse animi ea magnam, rem assumenda ad asperiores commodi reiciendis similique veniam harum ipsum minus dicta officia.</p>
-                <a href="#" class="btn">Click</a>
+    <main>
+        <section>
+            <div class="section1 header-contactPage">
+                <h2>Welcome To Contact Page<span>Lorem ipsum dolor sit amet consectetur adipisicing</span></h2>
             </div>
-            <div class="form-showcase">
-                <h2>Contact Us</h2>
-                <form>
-                    <div class="form-input">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="text" name="company" placeholder="CompanyName" required>
-                    </div>
-                    <div class="form-input">
-                        <input type="text" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Submit" class="btn">
-                </form>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="icon-cards card container">
-        <div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et debitis vero dolorem sunt inventore libero tempora, consectetur rem praesentium quam!</h3>
-            <div class="grid-of3">
-                <div>
-                    <i class="fas fa-fax fa-4x"></i>
-                    <h3>Fax</h3>
-                    <p>+0-000-000-0000</p>
+        <section class="showcase">
+            <div class=" grid-of2 container">
+                <div class="showcase-text">
+                    <h2 class="sectionTitle">Network Info</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur ferendis hic sequi necessitatibus tenetur repudiandae
+                        mollitia eaque autem sint optio, inventore non sunt corporis quis fugit? Vitae, praesentium
+                        accusantium esse animi ea magnam, rem assumenda ad asperiores commodi reiciendis similique
+                        veniam harum ipsum minus dicta officia.</p>
+                    <a href="#" class="btn">Click</a>
                 </div>
-                <div>
-                    <i class="fas fa-phone fa-4x"></i>
-                    <h3>Call</h3>
-                    <p>+0-000-000-0000</p>
+                <div class="form-showcase">
+                    <h2>Share your Card</h2>
+                    <form>
+                        <div class="form-input">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="company" placeholder="CompanyName" required>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" name="email" placeholder="Email" required>
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
                 </div>
-                <div>
-                    <i class="fas fa-map-marker-alt fa-4x"></i>
-                    <h3>Post</h3>
-                    <p>Abc Street,Earth</p>
-                </div>                 
             </div>
-            
-        </div>
+        </section>
 
-    </section>
+        <section class="icon-cards container">
+            <div>
+                <h2 class="sectionTitle">Ways to Connect</h2>
+                <div class="grid-of3 card">
+                    <div>
+                        <i class="fas fa-fax fa-4x"></i>
+                        <h3>Fax</h3>
+                        <p>+0-000-000-0000</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone fa-4x"></i>
+                        <h3>Call</h3>
+                        <p>+0-000-000-0000</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt fa-4x"></i>
+                        <h3>Post</h3>
+                        <p>Abc Street,Earth</p>
+                    </div>
+                </div>
 
- 
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footeritems">
             <div class="footeritem1">
                 <h2><i class="fa fa-info-circle" aria-hidden="true"></i> More Information</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, perferendis, inventore ad dolor aspernatur quisquam fugit, explicabo enim veritatis vero voluptate aliquam quas porro. Nisi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, perferendis, inventore ad dolor
+                    aspernatur quisquam fugit, explicabo enim veritatis vero voluptate aliquam quas porro. Nisi?</p>
             </div>
             <ul class="footeritem2">
                 <li><a href="#">Item1</a></li>
@@ -105,6 +119,7 @@
             </div>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
