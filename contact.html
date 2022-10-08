@@ -34,7 +34,7 @@
 
     <main>
         <section>
-            <div class="section1 header-contactPage">
+            <div class="section1 pageHeader">
                 <h2>Welcome To Contact Page<span>Lorem ipsum dolor sit amet consectetur adipisicing</span></h2>
             </div>
         </section>
@@ -43,24 +43,59 @@
             <div class=" grid-of2 container">
                 <div class="showcase-text">
                     <h2 class="sectionTitle">Network Info</h2>
-                    <p><em>Lorem</em> ip sum dolor sit amet consectetur ferendis hic sequi necessitatibus tenetur repudiandae
-                        mollitia eaque autem sint optio, inventore non sunt corporis quis fugit. </p>
-                    <p><strong>Vitae</strong>, praesentium accusantium esse animi ea magnam, rem assumenda ad asperiores commodi reiciendis similique
-                        veniam harum ipsum minus dicta officia.</p>
-                    <P><span class="underline">Officia </span> ipsum dolor  sit amet consectetur adipisicing elit. Ratione deserunt atque at.</P>
-                    <a href="#" class="btn">Click</a>
+                    <div class="grid-of3 card">
+                        <div>
+                            <h4>Lorem, ips lor:</h4>
+                            <p>
+                                <em>Lorem</em> ip sum dolor sit amet consectetur ferendis hic sequi necessit atibus.
+                            </p>
+                            <p> 
+                                Atenetur repudiandae mollitia eaque autem sint optio, inventore non sunt corporis quis fugit. 
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Rem ads ad:</h4>
+                            <p>
+                                Lorem, ipsum <strong>vitae</strong>, praesentium accusantium esse , rem ads ap.
+                            </p>
+                            <p>
+                                Aasperi ores commodi reiciendis similique veniam harum ipsum minus dicta officia.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Em, ium dolor:</h4>
+                            <p><span class="underline">Officia </span> , assu menda ad asperiores praese animi ea magnam, rem. commodi reicie</p>
+                            <p>Dis similique veniam harum ipsum minus dicta officia.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-showcase">
-                    <h2>Share your Card</h2>
+                    <h2><i class="fa fa-handshake" aria-hidden="true"></i>Share your Card</h2>
                     <form>
                         <div class="form-input">
-                            <input type="text" name="name" placeholder="Name" required>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Your Name" maxlength="15" required>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="company" placeholder="Company Name" required>
+                            <label for="companyName">Company Name</label>
+                            <input id="companyName" type="text" name="companyName" placeholder="Your Company Name" maxlength="25" required>
                         </div>
                         <div class="form-input">
-                            <input type="text" name="email" placeholder="Email" required>
+                            <label for="phoneNumber">Phone</label>
+                            <input id="phoneNumber" type="tel" name="phoneNumber" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="abc@123.com" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="subscribeToNewsLetter">Subscribe to Newsletter ?</label>
+                            <span>
+                                <input id="subscribeToNewsLetter1" type="radio" name="subscribeToNewsLetter" required>
+                                <label for="subscribeToNewsLetter1">Yes</label>
+                                <input id="subscribeToNewsLetter2" type="radio" name="subscribeToNewsLetter" required>
+                                <label for="subscribeToNewsLetter2">No</label>
+                            </span>
                         </div>
                         <input type="submit" value="Submit" class="btn">
                     </form>
@@ -73,24 +108,32 @@
                 <h2 class="sectionTitle">Ways to Connect</h2>
                 <div class="grid-of4 card">
                     <div>
-                        <i class="fas fa-fax fa-4x"></i>
-                        <h3>Fax</h3>
-                        <p>+0-000-000-0000</p>
+                        <i class="fas fa-fax fa-4x" aria-hidden="true"></i>
+                        <dl>
+                            <dt><h3>Fax</h3></dt>
+                            <dd><a href="tel:+00000000000">+0-000-000-0000</a></dd>
+                        </dl>
                     </div>
                     <div>
-                        <i class="fas fa-phone fa-4x"></i>
-                        <h3>Call</h3>
-                        <p>+0-000-000-0000</p>
+                        <i class="fas fa-phone fa-4x" aria-hidden="true"></i>
+                        <dl>
+                            <dt><h3>Call</h3></dt>
+                            <dd><a href="tel:+00000000000">+0-000-000-0000</a></dd>
+                        </dl>
                     </div>
                     <div>
-                        <i class="fas fa-map-marker-alt fa-4x"></i>
-                        <h3>Post</h3>
-                        <p>Abc Street,Earth</p>
+                        <i class="fas fa-map-marker-alt fa-4x" aria-hidden="true"></i>
+                        <dl>
+                            <dt><h3>Post</h3></dt>
+                            <dd tabindex="0"><address>Abc Street,Earth</address></dd>
+                        </dl>
                     </div>
                     <div>
-                        <i class="fas fa-envelope fa-4x"></i>
-                        <h3>Email</h3>
-                        <p>abc@123.com</p>
+                        <i class="fas fa-envelope fa-4x" aria-hidden="true"></i>
+                        <dl>
+                            <dt><h3>Email</h3></dt>
+                            <dd><a href="mailto:abc@123.com">abc@123.com</a></dd>
+                        </dl>
                     </div>
                 </div>
 
@@ -118,10 +161,10 @@
                 <li><a href="#">Item8</a></li>
             </ul>
             <div class="footeritem4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="mailto:abcd@abcd.abcd" target="_blank"><i class="fas fa-at fa-2x"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                <a href="mailto:abcd@abcd.abcd" target="_blank"><i class="fas fa-at fa-2x" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
