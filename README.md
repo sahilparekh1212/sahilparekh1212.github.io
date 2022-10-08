@@ -1,4 +1,4 @@
-Project Id: Multipage Responsive HTML & CSS Only Project
+Project Id: Accessible and Responsive HTML-CSS Only Multipage Project
 
 Project Description: 
 This is 3 page project. All of the pages are static. Moreover, pages are responsive.
