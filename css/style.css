@@ -23,8 +23,8 @@ header::after,section::after,footer::after{
 
 .sectionTitle{
     background-color: rgba(128, 195, 240,0.6);
-    margin-bottom: 0.5em;
-    padding:0.5em;
+    margin-bottom: 0.5rem;
+    padding:0.5rem;
     text-align: center;
     border-radius: 5px;
 }
@@ -42,7 +42,7 @@ a{
 }
 
 h2,h3,p{
-    line-height:1.15em;
+    line-height:1.15rem;
 }
 
 .btn{
@@ -53,7 +53,7 @@ h2,h3,p{
     border:1px solid ;
     border-color: var(--primary-color);
     padding:5px;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     cursor: pointer;    
 }
 
@@ -71,14 +71,14 @@ h2,h3,p{
 .grid-of2{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 1em;
+    gap: 1rem;
     justify-content: space-between;
 }
 
 .grid-of3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    gap: 1rem;
     justify-content: space-between;
 }
 
@@ -88,22 +88,22 @@ h2,h3,p{
 }
 
 .showcase-text h2{
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
 }
 
 .showcase-text i{
-    margin-right:0.35em;
+    margin-right:0.35rem;
 }
 
 .form-showcase form{
     background-color: rgba(0, 0, 0,0.04);
-    padding: 0.35em;
+    padding: 0.35rem;
     border-radius: 10px;
 }
 
 .form-input>input{
     max-width: 100%;
-    padding:0.5em;
+    padding:0.5rem;
     border:0;
 }
 
@@ -114,15 +114,15 @@ h2,h3,p{
 
 .form-showcase h2{
     display: inline-block;
-    padding: 0.5em;
+    padding: 0.5rem;
     border-radius:5px;
     width: 100%;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.25rem;
     background-color: rgba(128, 195, 240,0.6);
 }
 
 .form-showcase h2 i,.form-showcase div label,.form-showcase div input{
-    padding-right: 0.35em;
+    padding-right: 0.35rem;
 }
 
 .form-showcase div input{
@@ -130,11 +130,11 @@ h2,h3,p{
 }
 
 .form-input{
-    margin:0.5em;
+    margin:0.5rem;
 }
 
 form .btn{
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
 }
 
 .grid-of4{
@@ -143,7 +143,7 @@ form .btn{
     justify-content:center;
     align-items: center;
     text-align: center;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .icon-cards>.container>h3{
@@ -153,13 +153,29 @@ form .btn{
 .card{
     background: rgba(0, 0, 0,0.04);
     border-radius: 10px;
-    padding: 1em;
+    padding: 1rem;
 }
 
 .underline{
     text-decoration: underline;
 }
 
+.pageHeader{
+    padding: 8rem 3rem 8rem;
+    position: relative;
+    z-index: 99;
+    height: auto;
+    min-height: 30vh;
+    max-height: 50vh;
+    text-align: center;
+    background: var(--primary-color); 
+}
+
+.pageHeader h2{
+    margin-bottom:0.25rem;
+    text-align: center;
+    font-weight: bolder;
+}
 
 /*Header_________________________________________________________*/
 nav ul li{ 
@@ -177,12 +193,12 @@ nav ul li a:hover,nav ul li a:focus{
 }
 
 nav ul i{
-    margin: 0.65em 0.5em 0.65em;
+    margin: 0.65rem 0.5rem 0.65rem;
 }
 
 nav h4{
     display: inline-block;
-    padding-right: 0.8em;
+    padding-right: 0.8rem;
 }
 
 nav .btn{
@@ -216,10 +232,11 @@ nav .btn:hover,nav .btn:focus{
 .section1 h2 span{
     display: block;
     font-weight: lighter;
-    font-size: 0.9em;
+    padding: 0.25rem;
+    font-size: 1.3rem;
 }
 .section1 .btn{
-    margin: 0.5em;
+    margin: 0.5rem;
     border: 1px solid rgb(0, 0, 0);
 }
 
@@ -244,13 +261,13 @@ nav .btn:hover,nav .btn:focus{
     align-items: center;
     position: relative;
     background-color:var(--primary-color);
-    margin-top: 0.8em;
-    padding: 3em 1em;
+    margin-top: 0.8rem;
+    padding: 3rem 1rem;
 }
 .footeritem1{
     max-width: 50%;
     text-align: left; 
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 
 .footeritem1 h2{
@@ -264,7 +281,7 @@ nav .btn:hover,nav .btn:focus{
 }
 
 .footeritem2 li,.footeritem3 li{
-    padding-bottom: 0.3em;
+    padding-bottom: 0.3rem;
 }
 
 .footeritem4{
@@ -273,8 +290,8 @@ nav .btn:hover,nav .btn:focus{
 }
 
 .footeritem4 a{
-    padding:0.25em;
-    margin-right: 0.8em;
+    padding:0.25rem;
+    margin-right: 0.8rem;
 }
 
 .footeritem4 a:hover i{
@@ -289,17 +306,17 @@ nav .btn:hover,nav .btn:focus{
 
 /*Home Page or Index Page_________________________________________________________*/
 .section2{
-    padding:8em 5em 5em ;
+    padding:8rem 5rem 5rem ;
     background-color:var(--color-3);
     outline: 1px solid black;
-    outline-offset: -3em;
+    outline-offset: -3rem;
     position: relative;
-    margin: 0.8em auto auto;
+    margin: 0.8rem auto auto;
     max-width: 86.5%;
 }
 
 .p-1{
-    padding: 0 1em;
+    padding: 0 1rem;
 }
 
 .section2 h2{
@@ -307,7 +324,7 @@ nav .btn:hover,nav .btn:focus{
     color: var(--primary-color);
     background: white;
     font-weight: bolder;
-    margin-top: -3.9em;
+    margin-top: -5.9rem;
     text-align: center;
     max-width: 50%;
 }
@@ -319,7 +336,7 @@ nav .btn:hover,nav .btn:focus{
 .section2-paragraphs>*{
     flex:1 1 30ch;
     background-color:var(--color-3);
-    margin: 0 1em 1em 0;
+    margin: 0 1rem 1rem 0;
 }
 
 .section3{
@@ -335,22 +352,22 @@ nav .btn:hover,nav .btn:focus{
     margin:auto;
     align-content: center;
     align-items: center;
-    padding:0.8em;
-    margin: 0.8em 0;
+    padding:0.8rem;
+    margin: 0.8rem 0;
 }
 
 .grid-ish{
     display:flex;
     flex-wrap:wrap;
-    gap:0.8em;
+    gap:0.8rem;
  }
 .grid-ish>*{
-    flex:1 1 20em;
+    flex:1 1 20rem;
     background-color: rgb(240, 248, 255);
 }
 
 .grid-item{
-    height: 18.5em;
+    height: 18.5rem;
     width:auto;
     background-size: cover;
     text-align: center;
@@ -385,11 +402,11 @@ nav .btn:hover,nav .btn:focus{
 
 .item-desc{
     position: absolute;
-    bottom: 3em;
+    bottom: 3rem;
     left: 0;
     right: 0;
     background: rgba(0,0,0,0.3);
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -405,7 +422,6 @@ nav .btn:hover,nav .btn:focus{
 }
 
 .aboutPage-container>h2{
-    margin-bottom:0.2em;
     text-align: center;
     font-weight: bolder;
 }
@@ -415,11 +431,11 @@ nav .btn:hover,nav .btn:focus{
 }
 
 .aboutPage-col{ 
-    padding: 0.8em; 
+    padding: 0.8rem; 
 }
 
 .aboutPage-col h3{ 
-    padding: 0.3em 0; 
+    padding: 0.3rem 0; 
 }
 
 .aboutPage-col1{        
@@ -453,12 +469,12 @@ nav .btn:hover,nav .btn:focus{
 }
 
 .aboutPage-container i{
-    padding:0 0.5em;
+    padding:0 0.5rem;
 }
 
 .our-collaborations{
-    padding: 1em 0;
-    margin-top: 3em;
+    padding: 1rem 0;
+    margin-top: 3rem;
 }
 
 .our-collaborations h2{
@@ -475,7 +491,7 @@ nav .btn:hover,nav .btn:focus{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     justify-content: space-between;
-    gap: 0.5em;
+    gap: 0.5rem;
     text-align: center;
 }
 
@@ -485,37 +501,20 @@ nav .btn:hover,nav .btn:focus{
 }
 
 .grid-of2by3 i{
-    padding: 0.25em;
+    padding: 0.25rem;
 }
 
 /*Contact Page_________________________________________________________*/
-.pageHeader{
-    padding: 8em 3em 8em;
-    position: relative;
-    z-index: 99;
-    height: auto;
-    min-height: 30vh;
-    max-height: 50vh;
-    text-align: center;
-    background: var(--primary-color); 
-}
-
-.pageHeader h2{
-    margin-bottom:0.25em;
-    text-align: center;
-    font-weight: bolder;
-}
-
 .showcase{
     margin: 50px auto auto;
 }
 
 .showcase .container{
-    padding: 1em;   
+    padding: 1rem;   
 }
 
 .showcase .grid-of3 h4{
-    padding-bottom: 0.35em;
+    padding-bottom: 0.35rem;
 }
 
 .showcase .grid-of3 p::first-letter{
@@ -525,15 +524,15 @@ nav .btn:hover,nav .btn:focus{
 }
  
 .grid-of4 i{
-    margin: 0.3em;
+    margin: 0.3rem;
 }
 
 .grid-of4 h3{
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 .icon-cards{
-    padding:1em;
+    padding:1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -547,7 +546,7 @@ nav .btn:hover,nav .btn:focus{
 @media(max-width:500px){
 
     h2{
-        margin-bottom: 0.25em;
+        margin-bottom: 0.25rem;
     }
 
     ul{
@@ -569,11 +568,11 @@ nav .btn:hover,nav .btn:focus{
 
     .pageHeader{
         min-height: 40vh;
-        padding-bottom: 11em;
+        padding-bottom: 11rem;
     }
 
     .showcase,.aboutPage-container{
-        margin-top:1em;
+        margin-top:1rem;
     }
 
     .form-showcase{
@@ -582,7 +581,7 @@ nav .btn:hover,nav .btn:focus{
     }
 
     .btn{
-        margin:0.2em;
+        margin:0.2rem;
     }
 
     .section1{    
@@ -601,12 +600,12 @@ nav .btn:hover,nav .btn:focus{
     }
 
     .section2{
-        padding:8em 5em 4em;
+        padding:8rem 5rem 4rem;
         background-color:var(--color-3);
         outline: 1px solid black;
-        outline-offset: -3em;
+        outline-offset: -3rem;
         position: relative;
-        margin: 0.8em auto auto ;
+        margin: 0.8rem auto auto ;
         max-width: 100%;
     }
 
@@ -658,18 +657,18 @@ nav .btn:hover,nav .btn:focus{
     .footeritem1{
         max-width: 100%;
         text-align: left; 
-        padding-left: 1em;
+        padding-left: 1rem;
     }
 
     .footeritem1,.footeritem2,.footeritem3,.footeritem4{
-        padding-bottom: 1em;
+        padding-bottom: 1rem;
     }
     .footeritem2,.footeritem3,.footeritem4{
-        padding:1em 0 0 1em ;
+        padding:1rem 0 0 1rem ;
     }
 
     .footeritem2 ul,.footeritem3 ul{
-        margin:1em auto;
+        margin:1rem auto;
     }
 
 }
