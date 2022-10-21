@@ -68,6 +68,13 @@ h2,h3,p{
     justify-content: center ;
 }
 
+.parallax{
+    height: 18.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .grid-of2{
     display: grid;
     grid-template-columns: 3fr 2fr;
