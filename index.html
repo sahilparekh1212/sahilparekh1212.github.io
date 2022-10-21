@@ -45,13 +45,15 @@
             <div class="section2">
                 <h2 class="p-1">Recent Highlights</h2>
                 <div class="section2-paragraphs">
-                    <p>Oiam amet quasi explicabo,nisi <b>Ess<sub>0</sub></b> <b>Lab<sup>m</sup></b> dolore pariatur
-                        excepturi? Vel ad adipisci voluptates, odio voluptate velit quidem blanditiis rem vero, ipsum,
-                        ullam
-                        obcaecati laudantium?</p>
-                    <p>Lorem ipsum dolor sit amet <b>Consectetur Adipisicing</b> elit. Reiciendis new-quis error
-                        iure obcaecati exercitationem, culpa tinctio aperiam sunt rerum mollitia sed. </p>
-                    <p><span>User cannot select: Lorem ipsum m expedita dae acc reiciendis. Corporis mol nemo vel labo odio est
+                    <p>Oiam amet quasi explicabo,nisi <b>Ess<sub>0</sub></b> <b>Lab<sup>m</sup></b>
+                        <br><label for="abc">AB C:</label><progress id="abc" value="90" max="100">90%</progress>
+                        <br><label for="pqr">PQ R:</label><progress id="pqr" value="70" max="100">70%</progress>
+                        <br><label for="xyz">XY Z:</label><progress id="xyz" value="85" max="100">85%</progress>
+                    </p>
+                    <p><abbr title="Cascading Style Sheet"><mark>CSS</mark></abbr>:Lorem ipsum dolor sit amet elit. Reiciendis new-quis error
+                        iure obcaecati exerci. Aationem, culpa tinctio ap io aperiam sunt rer eriam sunt rerum mollitia sed.
+                    </p>
+                    <p><span>User cannot select: Lorem &#40;<del>ipsum m expedita</del>&#41; dae acc reiciendis. Corporis mol nemo vel labo odio est
                         doloribus quo, velit culpa?</span><br>User can select Code: <code> git pull origin branch</code></p>
                 </div>
             </div>
@@ -99,26 +101,30 @@
                 <div class="about-cols flexWrap">
                     <div class="about-col1 about-col">
                         <h3><i class="fa fa-binoculars" aria-hidden="true"></i>Vision</h3>
-                        <p>Lorem ip sum dolor sit amet ipsum dolor sit amet consectetur adipisicing consectetur
-                            adipisicing elit. Facilis cumque quisquam numquam a distinctio quibusdam dolor, possimus
-                            neque eos quos corrupti incidunt velit quidem aliquam!</p>
-                        <a href="#" class="btn">More</a>
+                        <details>
+                            <summary>Incidunt</summary>
+                            <p>Lorem ip sum dolor sit amet ipsum dolor sit amet consectetur adipisicing consectetur
+                                adipisicing elit. Facilis cumque quisquam numquam a distinctio quibusdam dolor, possimus
+                                neque eos quos corrupti incidunt velit quidem aliquam!</p>
+                        </details>
                     </div>
                     <div class="about-col2 about-col">
                         <h3><i class="fa fa-briefcase" aria-hidden="true"></i>Mission</h3>
-                        <div class="text-cols">
-                            <p>Lorem ipsum dolor sit amet consectetur, a hic quae dicta nostrum, at ea vitae accusantium
+                        <details>
+                            <summary>Lorem</summary>
+                            <p>Ipsum dolor sit amet consectetur, a hic quae dicta nostrum, at ea vitae accusantium
                                 numquam officiis consequuntur laborum dolores? Quisquam?</p>
                             <p>Lorem ipsum elit. Fuga nostrum, at ea vita Quisquam?</p>
-                        </div>
-                        <a href="#" class="btn">More</a>
+                        </details>
                     </div>
                     <div class="about-col3 about-col">
                         <h3><i class="fa fa-compass" aria-hidden="true"></i>Values</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet alias soluta ipsam quas
-                            debitis ex consequuntur et nulla accusantium deserunt a libero sed exercitationem vel
-                            ducimus, officiis dignissimos.</p>
-                        <a href="#" class="btn">More</a>
+                        <details>
+                            <summary>Amet</summary>
+                            <p>Lorem, ipsum dolor sit consectetur adipisicing elit. Eveniet alias soluta ipsam quas
+                                debitis ex consequuntur et nulla accusantium deserunt a libero sed exercitationem vel
+                                ducimus, officiis dignissimos.</p>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -203,6 +209,15 @@
                             <div class="form-input">
                                 <label for="email">Email</label>
                                 <input id="email" type="email" name="email" placeholder="abc@123.com" required>
+                            </div>
+                            <div class="form-input">
+                                <label for="contactMethodPreference">Contact Preference</label>
+                                <input id="contactMethodPreference" name="contactMethodPreference" list="contactMethodPreferenceList" required>
+                                <datalist id="contactMethodPreferenceList">
+                                    <option value="Phone"></option>
+                                    <option value="Email"></option>
+                                    <option value="Any"></option>
+                                </datalist>
                             </div>
                             <div class="form-input grid-of2">
                                 <label for="subscribeToNewsLetter">Subscribe to Newsletter ?</label>
