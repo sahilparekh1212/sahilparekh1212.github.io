@@ -16,16 +16,23 @@
 
     <header>
         <div class="headeritems">
-            <h2>Logo</h2>
+            <div class="logo">
+                Logo
+            </div>
+
             <nav>
                 <ul>
-                    <li class="btn"><a href="#home"><i class="fa fa-home" aria-hidden="true"></i>
+                    <li class="btn tooltipWrapper"><a href="#home"><i class="fa fa-home" aria-hidden="true"><small
+                                    class="tooltip">Go to Home</small></i>
                             <h4>Home</h4>
                         </a></li>
-                    <li class="btn"><a href="#about"><i class="fas fa-info" aria-hidden="true"></i>
+                    <li class="btn tooltipWrapper"><a href="#about"><i class="fas fa-info" aria-hidden="true"><small
+                                    class="tooltip">Go
+                                    to About</small></i>
                             <h4>About</h4>
                         </a></li>
-                    <li class="btn"><a href="#contact"><i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    <li class="btn tooltipWrapper"><a href="#contact"><i class="fas fa-phone-alt"
+                                aria-hidden="true"><small class="tooltip">Go to Contact</small></i>
                             <h4>Contact</h4>
                         </a></li>
                 </ul>
@@ -49,11 +56,16 @@
                         <br><label for="abc">AB C: </label><progress id="abc" value="90" max="100">90%</progress>
                         <br><span>XY Z: </span><span class="progress"><small>85%</small></span>
                     </p>
-                    <p><abbr title="Cascading Style Sheet"><mark>CSS</mark></abbr>:Lorem ipsum dolor sit amet elit. Reiciendis new-quis error
-                        iure obcaecati exerci. Aationem, culpa <cite>Tinctio Aph</cite> io aperiam sunt rer eriam sunt rerum mollitia sed.
+                    <p><abbr title="Cascading Style Sheet"><mark>CSS</mark></abbr>:Lorem ipsum dolor sit amet elit.
+                        Reiciendis new-quis error
+                        iure obcaecati exerci. Aationem, culpa <cite>Tinctio Aph</cite> io aperiam sunt rer eriam sunt
+                        rerum mollitia sed.
                     </p>
-                    <p><span>User cannot select: Lorem &#40;<del>ipsum m expedita</del>&#41; dae acc reiciendis. Corporis mol nemo vel labo odio est
-                        doloribus quo, velit culpa?</span><br>User can select Code: <code> git pull origin branch</code></p>
+                    <p><span>User cannot select: Lorem &#40;<del>ipsum m expedita</del>&#41; dae acc reiciendis.
+                            Corporis mol nemo vel labo odio est
+                            doloribus quo, velit culpa?</span><br>User can select Code:
+                        <code> git pull origin branch</code>
+                    </p>
                 </div>
             </div>
 
@@ -95,7 +107,7 @@
         </section>
 
         <section id="about">
-            <div class="about-container">
+            <div class="container">
                 <h2 class="sectionTitle"><i class="fa fa-info" aria-hidden="true"></i> About Us</h2>
                 <div class="about-cols flexWrap">
                     <div class="about-col1 about-col">
@@ -127,8 +139,8 @@
                     </div>
                 </div>
             </div>
-    
-            <div class="our-collaborations about-container">
+
+            <div class="container">
                 <h2 class="sectionTitle"><i class="fa fa-users" aria-hidden="true"></i> Our Collaborations</h2>
                 <div class="grid-of2by3">
                     <div class="card">
@@ -156,84 +168,84 @@
             </div>
         </section>
 
-        <section id="contact">
-            <div class="showcase">
-                <div class=" grid-of2 container">
-                    <div class="showcase-text">
-                        <h2 class="sectionTitle"><i class="fa fa-globe" aria-hidden="true"></i>Network Info</h2>
-                        <div class="grid-of3 card">
-                            <div>
-                                <h4>Lorem, ips lor:</h4>
-                                <p>
-                                    <em>Lorem</em> ip sum dolor sit amet fere hic sequi necessit atibus.
-                                </p>
-                                <p>
-                                    Atenetur repudiandae mollitia eaque aut sint optio, non corporis quis fugit.
-                                </p>
-                            </div>
-                            <div>
-                                <h4>Rem ads ad:</h4>
-                                <p>
-                                    Lorem, ipsum <strong>vitae</strong>, praesentium accusantium esse , rem ads ap.
-                                </p>
-                                <p>
-                                    Aasperi ores commodi reiciendis similique veniam harum ipsum minus dicta officia.
-                                </p>
-                            </div>
-                            <div>
-                                <h4>Em, ium dolor:</h4>
-                                <p><span class="underline">Officia </span> , assu menda ad asperiores praese animi ea
-                                    magnam, rem.</p>
-                                <p>Dis similique veniam harum ipsum minus dicta officia.</p>
-                            </div>
+        <section id="contact" class="container">
+            <div class=" grid-of2">
+                <div class="showcase-text">
+                    <h2 class="sectionTitle"><i class="fa fa-globe" aria-hidden="true"></i>Network Info</h2>
+                    <div class="grid-of3 card">
+                        <div>
+                            <h4>Lorem, ips lor:</h4>
+                            <p>
+                                <em>Lorem</em> ip sum dolor sit amet fere hic sequi necessit atibus.
+                            </p>
+                            <p>
+                                Atenetur repudiandae mollitia eaque aut sint optio, non corporis quis fugit.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Rem ads ad:</h4>
+                            <p>
+                                Lorem, ipsum <strong>vitae</strong>, praesentium accusantium esse , rem ads ap.
+                            </p>
+                            <p>
+                                Aasperi ores commodi reiciendis similique veniam harum ipsum minus dicta officia.
+                            </p>
+                        </div>
+                        <div>
+                            <h4>Em, ium dolor:</h4>
+                            <p><span class="underline">Officia </span> , assu menda ad asperiores praese animi ea
+                                magnam, rem.</p>
+                            <p>Dis similique veniam harum ipsum minus dicta officia.</p>
                         </div>
                     </div>
-                    <div class="form-showcase">
-                        <h2><i class="fa fa-handshake" aria-hidden="true"></i>Share your Card</h2>
-                        <form>
-                            <div class="form-input">
-                                <label for="name">Name</label>
-                                <input id="name" type="text" name="name" placeholder="Your Name" maxlength="15" spellcheck="false" required>
-                            </div>
-                            <div class="form-input">
-                                <label for="message">Message</label>
-                                <input id="message" type="text" name="message" placeholder="Spellcheck comment"
-                                    maxlength="100" spellcheck="true" required>
-                            </div>
-                            <div class="form-input">
-                                <label for="phoneNumber">Phone</label>
-                                <input id="phoneNumber" type="tel" name="phoneNumber" placeholder="123-123-1234"
-                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                            </div>
-                            <div class="form-input">
-                                <label for="email">Email</label>
-                                <input id="email" type="email" name="email" placeholder="abc@123.com" required>
-                            </div>
-                            <div class="form-input">
-                                <label for="contactMethodPreference">Contact Preference</label>
-                                <input id="contactMethodPreference" name="contactMethodPreference" list="contactMethodPreferenceList" required>
-                                <datalist id="contactMethodPreferenceList">
-                                    <option value="Phone"></option>
-                                    <option value="Email"></option>
-                                    <option value="Any"></option>
-                                </datalist>
-                            </div>
-                            <div class="form-input grid-of2">
-                                <label for="subscribeToNewsLetter">Subscribe to Newsletter ?</label>
-                                <span>
-                                    <input id="subscribeToNewsLetter1" type="radio" name="subscribeToNewsLetter" required>
-                                    <label for="subscribeToNewsLetter1">Yes</label>
-                                    <input id="subscribeToNewsLetter2" type="radio" name="subscribeToNewsLetter" required>
-                                    <label for="subscribeToNewsLetter2">No</label>
-                                </span>
-                            </div>
-                            <input type="submit" value="Submit" class="btn">
-                        </form>
-                    </div>
+                </div>
+                <div class="form-showcase">
+                    <h2><i class="fa fa-handshake" aria-hidden="true"></i>Share your Card</h2>
+                    <form>
+                        <div class="form-input">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" placeholder="Your Name" maxlength="15"
+                                spellcheck="false" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="message">Message</label>
+                            <input id="message" type="text" name="message" placeholder="Spellcheck comment"
+                                maxlength="100" spellcheck="true" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="phoneNumber">Phone</label>
+                            <input id="phoneNumber" type="tel" name="phoneNumber" placeholder="123-123-1234"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="abc@123.com" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="contactMethodPreference">Contact Preference</label>
+                            <input id="contactMethodPreference" name="contactMethodPreference"
+                                list="contactMethodPreferenceList" required>
+                            <datalist id="contactMethodPreferenceList">
+                                <option value="Phone"></option>
+                                <option value="Email"></option>
+                                <option value="Any"></option>
+                            </datalist>
+                        </div>
+                        <div class="form-input grid-of2">
+                            <label for="subscribeToNewsLetter">Subscribe to Newsletter ?</label>
+                            <span>
+                                <input id="subscribeToNewsLetter1" type="radio" name="subscribeToNewsLetter" required>
+                                <label for="subscribeToNewsLetter1">Yes</label>
+                                <input id="subscribeToNewsLetter2" type="radio" name="subscribeToNewsLetter" required>
+                                <label for="subscribeToNewsLetter2">No</label>
+                            </span>
+                        </div>
+                        <input type="submit" value="Submit" class="btn">
+                    </form>
                 </div>
             </div>
-    
-            <div class="icon-cards container">
+
+            <div class="icon-cards">
                 <div>
                     <h2 class="sectionTitle">Ways to Connect</h2>
                     <div class="grid-of4 card">
@@ -276,7 +288,7 @@
                             </dl>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
         </section>
@@ -303,10 +315,14 @@
                 <li><a href="#">Item8</a></li>
             </ul>
             <div class="footeritem4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-2x"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter fa-2x"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"
+                        aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-2x"
+                        aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
