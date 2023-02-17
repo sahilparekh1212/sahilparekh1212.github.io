@@ -21,25 +21,11 @@ footer::after {
     clear: both;
 }
 
-.tooltipWrapper {
-    position: relative;
-}
-
-.tooltipWrapper .tooltip {
-    position: absolute;
-    text-transform: capitalize;
-    top: 120%;
-    left: 0%;
-    visibility: hidden;
-    border-radius: 5px;
+.logo:hover::after {
+    content: " HTML CSS Project Logo";
+    font-size: small;
+    background-color: aliceblue;
     padding: 0.25rem;
-    background-color: rgba(150, 143, 143, 0.9);
-    transition: ease-in 0.5s;
-    z-index: 100;
-}
-
-.tooltipWrapper:hover .tooltip {
-    visibility: visible;
 }
 
 .sectionTitle {
@@ -58,8 +44,21 @@ ul {
     list-style-type: none;
 }
 
+summary+ul {
+    list-style-type: decimal;
+    columns: 3;
+    padding: 1rem;
+}
+
 a {
     text-decoration: none;
+    display: block;
+}
+
+a[href$=".pdf"]::after {
+    content: "(pdf)";
+    color: rgb(182, 141, 221);
+    font-weight: 800;
 }
 
 .scrollToTop {
@@ -163,7 +162,7 @@ p {
     background-color: rgba(128, 195, 240, 0.6);
 }
 
-.form-showcase h2 i,
+.form-showcase h2>i,
 .form-showcase div label,
 .form-showcase div input {
     padding-right: 0.35rem;
@@ -177,8 +176,26 @@ p {
     margin: 0.2rem;
 }
 
+form {
+    position: relative;
+}
+
 form .btn {
     margin-left: 0.5rem;
+}
+
+form:focus-within {
+    background-color: rgb(186, 255, 199);
+}
+
+form:focus-within::after {
+    content: "Using 'form: focus-within' selector";
+    position: absolute;
+    background-color: white;
+    right: 5%;
+    bottom: 50%;
+    width: 15ch;
+    font-size: 0.8em;
 }
 
 .grid-of4 {
@@ -333,6 +350,7 @@ nav .btn:focus {
     display: flex;
     flex-direction: column;
     margin-right: 15px;
+    line-height: 1.5;
 }
 
 .footeritem2 li,
@@ -353,7 +371,22 @@ nav .btn:focus {
 .footeritem4 a:hover i {
     transform: scale(1.2);
     transition: ease-in 400ms;
-    color: rgb(255, 255, 255);
+}
+
+.footeritem4 a[title="Facebook"]:hover i {
+    color: rgb(35, 0, 190);
+}
+
+.footeritem4 a[title="Twitter"]:hover i {
+    color: rgb(34, 255, 233);
+}
+
+.footeritem4 a[title="Instagram"]:hover i {
+    color: rgb(221, 98, 98);
+}
+
+.footeritem4 a[title="Youtube"]:hover i {
+    color: rgb(185, 0, 0);
 }
 
 .footeritems li a:hover,
@@ -418,6 +451,7 @@ br span {
     height: 1rem;
     width: 80%;
     border-radius: 10px;
+
 }
 
 .progress small {
@@ -426,7 +460,7 @@ br span {
     text-align: right;
     color: rgb(255, 255, 255);
     border-radius: 10px;
-    font-size: small;
+    font-size: smaller;
 }
 
 cite {
@@ -549,7 +583,7 @@ code {
     padding: 0 0.4rem 0.4rem 0;
 }
 
-.about-col details {
+.about-col2 details {
     user-select: all;
 }
 
@@ -731,6 +765,10 @@ address {
 }
 
 @media(max-width:765px) {
+
+    summary+ul {
+        columns: 2;
+    }
 
     .grid-of2 {
         grid-template-columns: 1fr;
