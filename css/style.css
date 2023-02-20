@@ -21,30 +21,16 @@ footer::after {
     clear: both;
 }
 
-.tooltipWrapper {
-    position: relative;
-}
-
-.tooltipWrapper .tooltip {
-    position: absolute;
-    text-transform: capitalize;
-    top: 120%;
-    left: 0%;
-    visibility: hidden;
-    border-radius: 5px;
+.logo:hover::after {
+    content: " HTML CSS Project Logo";
+    font-size: small;
+    background-color: aliceblue;
     padding: 0.25rem;
-    background-color: rgba(150, 143, 143, 0.9);
-    transition: ease-in 0.5s;
-    z-index: 100;
-}
-
-.tooltipWrapper:hover .tooltip {
-    visibility: visible;
 }
 
 .sectionTitle {
     background-color: rgba(128, 195, 240, 0.6);
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
     padding: 0.5rem;
     text-align: center;
     border-radius: 5px;
@@ -58,8 +44,21 @@ ul {
     list-style-type: none;
 }
 
+summary+ul {
+    list-style-type: decimal;
+    columns: 3;
+    padding: 1rem;
+}
+
 a {
     text-decoration: none;
+    display: block;
+}
+
+a[href$=".pdf"]::after {
+    content: "(pdf)";
+    color: rgb(182, 141, 221);
+    font-weight: 800;
 }
 
 .scrollToTop {
@@ -68,8 +67,8 @@ a {
     border: 1px dashed blue;
     border-radius: 50%;
     position: fixed;
-    right: 1rem;
-    bottom: 1rem;
+    inset-inline-end: 1rem;
+    inset-block-end: 1rem;
     transition: ease-in 0.3s;
     background: white no-repeat center/contain url(../images/Arrow.png);
 }
@@ -93,7 +92,7 @@ p {
     border: 1px solid;
     border-color: var(--primary-color);
     padding: 5px;
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
     cursor: pointer;
 }
 
@@ -126,15 +125,15 @@ p {
 
 .showcase-text .btn {
     background: rgba(0, 0, 0, 0.2);
-    margin-left: 0;
+    margin-inline-start: 0;
 }
 
 .showcase-text h2 {
-    margin-bottom: 0.25rem;
+    margin-block-end: 0.25rem;
 }
 
 .showcase-text i {
-    margin-right: 0.35rem;
+    margin-inline-end: 0.35rem;
 }
 
 .form-showcase form {
@@ -159,14 +158,14 @@ p {
     padding: 0.5rem;
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 0.25rem;
+    margin-block-end: 0.25rem;
     background-color: rgba(128, 195, 240, 0.6);
 }
 
-.form-showcase h2 i,
+.form-showcase h2>i,
 .form-showcase div label,
 .form-showcase div input {
-    padding-right: 0.35rem;
+    padding-inline-end: 0.35rem;
 }
 
 .form-showcase div input {
@@ -177,8 +176,26 @@ p {
     margin: 0.2rem;
 }
 
+form {
+    position: relative;
+}
+
 form .btn {
-    margin-left: 0.5rem;
+    margin-inline-start: 0.5rem;
+}
+
+form:focus-within {
+    background-color: rgb(186, 255, 199);
+}
+
+form:focus-within::after {
+    content: "Using 'form: focus-within' selector";
+    position: absolute;
+    background-color: white;
+    inset-inline-end: 5%;
+    inset-block-end: 50%;
+    inline-size: 15ch;
+    font-size: 0.8em;
 }
 
 .grid-of4 {
@@ -212,7 +229,7 @@ form .btn {
 }
 
 .pageHeader h2 {
-    margin-bottom: 0.25rem;
+    margin-block-end: 0.25rem;
     text-align: center;
     font-weight: bolder;
 }
@@ -227,8 +244,8 @@ form .btn {
 
 header {
     position: sticky;
-    top: 0;
-    left: 0;
+    inset-block-start: 0;
+    inset-inline-start: 0;
     z-index: 102;
     background-color: var(--primary-color);
 }
@@ -254,7 +271,7 @@ nav ul i {
 
 nav h4 {
     display: inline-block;
-    padding-right: 0.8rem;
+    padding-inline-end: 0.8rem;
 }
 
 nav .btn {
@@ -312,19 +329,19 @@ nav .btn:focus {
     align-items: center;
     position: relative;
     background-color: var(--primary-color);
-    margin-top: 0.8rem;
+    margin-block-start: 0.8rem;
     padding: 3rem 1rem;
     padding: 35px 15px;
 }
 
 .footeritem1 {
     max-width: 50%;
-    text-align: left;
-    padding-left: 1rem;
+    text-align: inline-start;
+    padding-inline-start: 1rem;
 }
 
 .footeritem1 h2 {
-    padding-bottom: 5px;
+    padding-block-end: 5px;
 }
 
 .footeritem2,
@@ -332,12 +349,13 @@ nav .btn:focus {
 .footeritem4 {
     display: flex;
     flex-direction: column;
-    margin-right: 15px;
+    margin-inline-end: 15px;
+    line-height: 1.5;
 }
 
 .footeritem2 li,
 .footeritem3 li {
-    padding-bottom: 0.3rem;
+    padding-block-end: 0.3rem;
 }
 
 .footeritem4 {
@@ -347,18 +365,33 @@ nav .btn:focus {
 
 .footeritem4 a {
     padding: 0.25rem;
-    margin-right: 0.8rem;
+    margin-inline-end: 0.8rem;
 }
 
 .footeritem4 a:hover i {
     transform: scale(1.2);
     transition: ease-in 400ms;
-    color: rgb(255, 255, 255);
+}
+
+.footeritem4 a[title="Facebook"]:hover i {
+    color: rgb(35, 0, 190);
+}
+
+.footeritem4 a[title="Twitter"]:hover i {
+    color: rgb(34, 255, 233);
+}
+
+.footeritem4 a[title="Instagram"]:hover i {
+    color: rgb(221, 98, 98);
+}
+
+.footeritem4 a[title="Youtube"]:hover i {
+    color: rgb(185, 0, 0);
 }
 
 .footeritems li a:hover,
 .footeritems ul li a:focus {
-    border-bottom: 1px black solid;
+    border-block-end: 1px black solid;
 }
 
 #home,
@@ -387,7 +420,7 @@ nav .btn:focus {
     color: var(--primary-color);
     background: white;
     font-weight: bolder;
-    margin-top: -5.9rem;
+    margin-block-start: -5.9rem;
     text-align: center;
     max-width: 50%;
 }
@@ -418,15 +451,16 @@ br span {
     height: 1rem;
     width: 80%;
     border-radius: 10px;
+
 }
 
 .progress small {
     background-color: rgb(40, 132, 79);
     width: 85%;
-    text-align: right;
+    text-align: inline-end;
     color: rgb(255, 255, 255);
     border-radius: 10px;
-    font-size: small;
+    font-size: smaller;
 }
 
 cite {
@@ -509,9 +543,9 @@ code {
 
 .item-desc {
     position: absolute;
-    bottom: 3rem;
-    left: 0;
-    right: 0;
+    inset-block-end: 3rem;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     background: rgba(0, 0, 0, 0.3);
     padding: 1rem;
     text-align: center;
@@ -549,18 +583,18 @@ code {
     padding: 0 0.4rem 0.4rem 0;
 }
 
-.about-col details {
+.about-col2 details {
     user-select: all;
 }
 
 .about-col1 {
     background-color: rgba(255, 206, 198, 0.3);
-    border-left: 6px solid rgb(249, 71, 71);
+    border-inline-start: 6px solid rgb(249, 71, 71);
 }
 
 .about-col2 {
     background-color: rgba(194, 255, 191, 0.2);
-    border-left: 6px solid rgb(39, 155, 23);
+    border-inline-start: 6px solid rgb(39, 155, 23);
 }
 
 .flexWrap {
@@ -574,7 +608,7 @@ code {
 
 .about-col3 {
     background-color: rgba(207, 191, 255, 0.3);
-    border-left: 6px solid rgb(87, 89, 245);
+    border-inline-start: 6px solid rgb(87, 89, 245);
 }
 
 .about-col1 .btn,
@@ -598,7 +632,7 @@ code {
 }
 
 .our-collaborations {
-    margin-top: 3rem;
+    margin-block-start: 3rem;
 }
 
 .our-collaborations h2 {
@@ -607,7 +641,7 @@ code {
 
 .our-collaborations i {
     margin: auto;
-    padding-right: 0;
+    padding-inline-end: 0;
 }
 
 .grid-of2by3 {
@@ -635,11 +669,11 @@ code {
 }
 
 .grid-of4 h3 {
-    margin-bottom: 0.5rem;
+    margin-block-end: 0.5rem;
 }
 
 .icon-cards {
-    margin-top: 2rem;
+    margin-block-start: 2rem;
 }
 
 .icon-cards h3 {
@@ -655,11 +689,11 @@ address {
 @media(max-width:500px) {
 
     h2 {
-        margin-bottom: 0.25rem;
+        margin-block-end: 0.25rem;
     }
 
     ul {
-        padding-right: 0;
+        padding-inline-end: 0;
     }
 
     nav ul {
@@ -677,11 +711,11 @@ address {
 
     .pageHeader {
         min-height: 40vh;
-        padding-bottom: 11rem;
+        padding-block-end: 11rem;
     }
 
     .container {
-        margin-top: 1rem;
+        margin-block-start: 1rem;
     }
 
     .form-showcase {
@@ -732,6 +766,10 @@ address {
 
 @media(max-width:765px) {
 
+    summary+ul {
+        columns: 2;
+    }
+
     .grid-of2 {
         grid-template-columns: 1fr;
         justify-content: center;
@@ -762,15 +800,15 @@ address {
 
     .footeritem1 {
         max-width: 100%;
-        text-align: left;
-        padding-left: 1rem;
+        text-align: inline-start;
+        padding-inline-start: 1rem;
     }
 
     .footeritem1,
     .footeritem2,
     .footeritem3,
     .footeritem4 {
-        padding-bottom: 1rem;
+        padding-block-end: 1rem;
     }
 
     .footeritem2,
