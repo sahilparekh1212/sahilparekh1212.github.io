@@ -37,7 +37,7 @@ footer::after {
 }
 
 img {
-    max-width: 100%;
+    max-inline-size: 100%;
 }
 
 ul {
@@ -81,7 +81,7 @@ a[href$=".pdf"]::after {
 h2,
 h3,
 p {
-    line-height: 1.15rem;
+    line-block-size: 1.15rem;
 }
 
 .btn {
@@ -102,7 +102,7 @@ p {
 }
 
 .parallax {
-    height: 18.5rem;
+    block-size: 18.5rem;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -143,7 +143,7 @@ p {
 }
 
 .form-input>input {
-    max-width: 100%;
+    max-inline-size: 100%;
     padding: 0.35rem;
     border: 0;
 }
@@ -157,7 +157,7 @@ p {
     display: inline-block;
     padding: 0.5rem;
     border-radius: 5px;
-    width: 100%;
+    inline-size: 100%;
     margin-block-end: 0.25rem;
     background-color: rgba(128, 195, 240, 0.6);
 }
@@ -176,19 +176,19 @@ p {
     margin: 0.2rem;
 }
 
-form {
+#shareCardForm {
     position: relative;
 }
 
-form .btn {
+#shareCardForm .btn {
     margin-inline-start: 0.5rem;
 }
 
-form:focus-within {
+#shareCardForm:focus-within {
     background-color: rgb(186, 255, 199);
 }
 
-form:focus-within::after {
+#shareCardForm:focus-within::after {
     content: "Using 'form: focus-within' selector";
     position: absolute;
     background-color: white;
@@ -221,9 +221,9 @@ form:focus-within::after {
     padding: 5rem 3rem 5rem;
     position: relative;
     z-index: 99;
-    height: auto;
-    min-height: 30vh;
-    max-height: 50vh;
+    block-size: auto;
+    min-block-size: 30vh;
+    max-block-size: 50vh;
     text-align: center;
     background: var(--primary-color);
 }
@@ -237,7 +237,7 @@ form:focus-within::after {
 .pageHeader h2 span {
     text-transform: capitalize;
     padding: 3rem;
-    line-height: 1.7;
+    line-block-size: 1.7;
 }
 
 /*Header_________________________________________________________*/
@@ -292,7 +292,7 @@ nav .btn:focus {
 }
 
 .headeritems {
-    width: 100%;
+    inline-size: 100%;
     z-index: 100;
     padding: 10px 10px;
 }
@@ -335,7 +335,7 @@ nav .btn:focus {
 }
 
 .footeritem1 {
-    max-width: 50%;
+    max-inline-size: 50%;
     text-align: inline-start;
     padding-inline-start: 1rem;
 }
@@ -350,7 +350,7 @@ nav .btn:focus {
     display: flex;
     flex-direction: column;
     margin-inline-end: 15px;
-    line-height: 1.5;
+    line-block-size: 1.5;
 }
 
 .footeritem2 li,
@@ -408,7 +408,7 @@ nav .btn:focus {
     outline-offset: -2.8rem;
     position: relative;
     margin: 0.8rem auto auto;
-    max-width: 86.5%;
+    max-inline-size: 86.5%;
 }
 
 .p-1 {
@@ -422,7 +422,7 @@ nav .btn:focus {
     font-weight: bolder;
     margin-block-start: -5.9rem;
     text-align: center;
-    max-width: 50%;
+    max-inline-size: 50%;
 }
 
 .section2-paragraphs {
@@ -442,21 +442,21 @@ nav .btn:focus {
 
 br span {
     display: inline-flex;
-    max-width: 20%;
+    max-inline-size: 20%;
 }
 
 .progress {
     display: inline-flex;
     background-color: rgba(0, 0, 0, 0.1);
-    height: 1rem;
-    width: 80%;
+    block-size: 1rem;
+    inline-size: 80%;
     border-radius: 10px;
 
 }
 
 .progress small {
     background-color: rgb(40, 132, 79);
-    width: 85%;
+    inline-size: 85%;
     text-align: inline-end;
     color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -474,13 +474,13 @@ code {
 }
 
 .section3 {
-    max-width: 80%;
+    max-inline-size: 80%;
     margin: auto;
 }
 
 .section3>p {
     display: block;
-    width: auto;
+    inline-size: auto;
     background-color: var(--primary-color);
     text-align: center;
     margin: auto;
@@ -502,8 +502,8 @@ code {
 }
 
 .grid-item {
-    height: 18.5rem;
-    width: auto;
+    block-size: 18.5rem;
+    inline-size: auto;
     background-size: cover;
     text-align: center;
     position: relative;
@@ -559,7 +559,7 @@ code {
 
 .container {
     margin: 0 auto 50px;
-    max-width: 86.5%;
+    max-inline-size: 86.5%;
 }
 
 .container>* {
@@ -614,7 +614,7 @@ code {
 .about-col1 .btn,
 .about-col2 .btn,
 .about-col3 .btn {
-    width: fit-content;
+    inline-size: fit-content;
     background-color: rgba(128, 195, 240, 0.9);
     color: var(--primary-color);
     font-weight: bolder;
@@ -685,6 +685,44 @@ address {
 }
 
 
+#subscribeFormSection {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.25rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+#subscribeFormSection form {
+    padding: 1rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: clamp(15ch, max(30vw, 35ch), 30vw);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#submitEmail {
+    display: none;
+}
+
+#subscribeFormSection input {
+    flex: 5 0 80%;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+#subscribeFormSection input:focus+#submitEmail {
+    display: block;
+}
+
 /*Media Queries_________________________________________________________*/
 @media(max-width:500px) {
 
@@ -710,7 +748,7 @@ address {
     }
 
     .pageHeader {
-        min-height: 40vh;
+        min-block-size: 40vh;
         padding-block-end: 11rem;
     }
 
@@ -729,8 +767,8 @@ address {
 
     .section1 {
         position: relative;
-        min-height: 30vh;
-        height: auto;
+        min-block-size: 30vh;
+        block-size: auto;
     }
 
     .headeritems,
@@ -786,11 +824,11 @@ address {
     }
 
     .form-showcase div input {
-        width: 100%;
+        inline-size: 100%;
     }
 
     .form-showcase div input[type="radio"] {
-        width: auto;
+        inline-size: auto;
     }
 
     .footeritems {
@@ -799,7 +837,7 @@ address {
     }
 
     .footeritem1 {
-        max-width: 100%;
+        max-inline-size: 100%;
         text-align: inline-start;
         padding-inline-start: 1rem;
     }
