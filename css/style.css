@@ -3,14 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%);
     font-family: 'Open Sans', sans-serif, serif;
 }
 
 :root {
-    --primary-color: rgba(128, 195, 240, 0.9);
-    --primary-color-backup: rgb(128, 195, 240);
-    --secondary-color: rgb(0, 224, 191);
+    --primary-color: hsla(204, 79%, 72%, 0.9);
+    --primary-color-backup: hsl(204, 79%, 72%);
+    --secondary-color: hsl(171, 100%, 44%);
     font-size: 17.5px;
 }
 
@@ -25,12 +25,12 @@ footer::after {
 .logo:hover::after {
     content: " HTML CSS Project Logo";
     font-size: small;
-    background-color: aliceblue;
+    background-color: hsl(208, 100%, 97%);
     padding: 0.25rem;
 }
 
 .sectionTitle {
-    background-color: rgba(128, 195, 240, 0.6);
+    background-color: hsla(204, 79%, 72%, 0.6);
     margin-block-end: 0.5rem;
     padding: 0.5rem;
     text-align: center;
@@ -58,25 +58,25 @@ a {
 
 a[href$=".pdf"]::after {
     content: "(pdf)";
-    color: rgb(182, 141, 221);
+    color: hsl(271, 54%, 71%);
     font-weight: 800;
 }
 
 .scrollToTop {
     display: block;
     padding: 1.2rem;
-    border: 1px dashed blue;
+    border: 1px dashed hsl(240, 100%, 50%);
     border-radius: 50%;
     position: fixed;
     inset-inline-end: 1rem;
     inset-block-end: 1rem;
     transition: ease-in 0.3s;
-    background: white no-repeat center/contain url(../images/Arrow.png);
+    background: hsl(0, 0%, 100%) no-repeat center/contain url(../images/Arrow.png);
 }
 
 .scrollToTop:hover {
     border-radius: 10px;
-    border-color: rgb(255, 158, 79);
+    border-color: hsl(27, 100%, 65%);
 }
 
 h2,
@@ -99,7 +99,7 @@ p {
 
 .btn:hover,
 .btn:focus {
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
 }
 
 .parallax {
@@ -125,7 +125,7 @@ p {
 }
 
 .showcase-text .btn {
-    background: rgba(0, 0, 0, 0.2);
+    background: hsla(0, 0%, 0%, 0.2);
     margin-inline-start: 0;
 }
 
@@ -143,7 +143,7 @@ p {
 }
 
 .form-showcase form {
-    background-color: rgba(0, 0, 0, 0.04);
+    background-color: hsla(0, 0%, 0%, 0.04);
     padding: 0.35rem;
     border-radius: 10px;
 }
@@ -156,7 +156,7 @@ p {
 
 .form-input>input:focus {
     outline: none;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 3px hsla(0, 0%, 0%, 0.3);
 }
 
 .form-showcase h2 {
@@ -165,7 +165,7 @@ p {
     border-radius: 5px;
     inline-size: 100%;
     margin-block-end: 0.25rem;
-    background-color: rgba(128, 195, 240, 0.6);
+    background-color: hsla(204, 79%, 72%, 0.6);
 }
 
 .form-showcase h2>i,
@@ -175,7 +175,7 @@ p {
 }
 
 .form-showcase div input {
-    background-color: rgba(0, 0, 0, 0.028);
+    background-color: hsla(0, 0%, 0%, 0.028);
 }
 
 .form-input {
@@ -191,13 +191,13 @@ p {
 }
 
 #shareCardForm:focus-within {
-    background-color: rgb(186, 255, 199);
+    background-color: hsl(131, 100%, 86%);
 }
 
 #shareCardForm:focus-within::after {
     content: "Using 'form: focus-within' selector";
     position: absolute;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     inset-inline-end: 5%;
     inset-block-end: 50%;
     inline-size: 15ch;
@@ -214,7 +214,7 @@ p {
 }
 
 .card {
-    background: rgba(0, 0, 0, 0.04);
+    background: hsla(0, 0%, 0%, 0.04);
     border-radius: 10px;
     padding: 1rem;
 }
@@ -268,7 +268,7 @@ nav ul li div div {
 
 nav ul li a:hover,
 nav ul li a:focus {
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
 }
 
 nav ul i {
@@ -281,12 +281,12 @@ nav h4 {
 }
 
 nav .btn {
-    background: rgba(0, 0, 0, 0.07);
+    background: hsla(0, 0%, 0%, 0.07);
 }
 
 nav .btn:hover,
 nav .btn:focus {
-    background: rgba(0, 0, 0, 0.2);
+    background: hsla(0, 0%, 0%, 0.2);
 }
 
 .headeritems,
@@ -304,11 +304,11 @@ nav .btn:focus {
 }
 
 .section1 h2 {
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
 }
 
 .section1 h2 span {
-    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%);
 }
 
 .section1 h2 span {
@@ -320,14 +320,14 @@ nav .btn:focus {
 
 .section1 .btn {
     margin: 0.5rem;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid hsl(0, 0%, 0%);
 }
 
 .section1 .btn:hover,
 .section1 .btn:focus {
     transition: 120ms ease-in;
-    border: 1px solid white;
-    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid hsl(0, 0%, 100%);
+    background: hsla(0, 0%, 0%, 0.2);
 }
 
 /*Footer_________________________________________________________*/
@@ -380,24 +380,24 @@ nav .btn:focus {
 }
 
 .footeritem4 a[title="Facebook"]:hover i {
-    color: rgb(35, 0, 190);
+    color: hsl(251, 100%, 37%);
 }
 
 .footeritem4 a[title="Twitter"]:hover i {
-    color: rgb(34, 255, 233);
+    color: hsl(174, 100%, 57%);
 }
 
 .footeritem4 a[title="Instagram"]:hover i {
-    color: rgb(221, 98, 98);
+    color: hsl(0, 64%, 63%);
 }
 
 .footeritem4 a[title="Youtube"]:hover i {
-    color: rgb(185, 0, 0);
+    color: hsl(0, 100%, 36%);
 }
 
 .footeritems li a:hover,
 .footeritems ul li a:focus {
-    border-block-end: 1px black solid;
+    border-block-end: 1px hsl(0, 0%, 0%) solid;
 }
 
 #home,
@@ -410,7 +410,7 @@ nav .btn:focus {
 .section2 {
     padding: 8rem 5rem 5rem;
     background-color: var(--color-3);
-    outline: 1px dashed black;
+    outline: 1px dashed hsl(0, 0%, 0%);
     outline-offset: -2.8rem;
     position: relative;
     margin: 0.8rem auto auto;
@@ -424,7 +424,7 @@ nav .btn:focus {
 .section2 h2 {
     position: absolute;
     color: var(--primary-color, var(--primary-color-backup));
-    background: white;
+    background: hsl(0, 0%, 100%);
     font-weight: bolder;
     margin-block-start: -5.9rem;
     text-align: center;
@@ -453,7 +453,7 @@ nav .btn:focus {
 #flowRootDiv img {
     block-size: 30px;
     float: left;
-    box-shadow: 5px 5px 5px rgb(22, 8, 99);
+    box-shadow: 5px 5px 5px hsl(249, 85%, 21%);
     margin: 0.25rem;
 }
 
@@ -464,7 +464,7 @@ br span {
 
 .progress {
     display: inline-flex;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: hsla(0, 0%, 0%, 0.1);
     block-size: 1rem;
     inline-size: 80%;
     border-radius: 10px;
@@ -472,21 +472,21 @@ br span {
 }
 
 .progress small {
-    background-color: rgb(40, 132, 79);
+    background-color: hsl(145, 53%, 34%);
     inline-size: 85%;
     text-align: inline-end;
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
     border-radius: 10px;
     font-size: smaller;
 }
 
 cite {
-    color: rgb(6, 84, 6);
-    background-color: rgba(0, 0, 0, 0.04);
+    color: hsl(120, 87%, 18%);
+    background-color: hsla(0, 0%, 0%, 0.04);
 }
 
 code {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: hsla(0, 0%, 0%, 0.2);
     user-select: all;
 }
 
@@ -515,7 +515,7 @@ code {
 
 .grid-ish>* {
     flex: 1 1 20rem;
-    background-color: rgb(240, 248, 255);
+    background-color: hsl(208, 100%, 97%);
 }
 
 .grid-item {
@@ -525,7 +525,7 @@ code {
     text-align: center;
     position: relative;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid hsla(0, 0%, 0%, 0.3);
 }
 
 .bg-1 {
@@ -549,13 +549,13 @@ code {
 }
 
 .btn-2 {
-    background-color: rgba(56, 56, 56, 0.5);
-    color: rgb(255, 255, 255);
+    background-color: hsla(0, 0%, 22%, 0.5);
+    color: hsl(0, 0%, 100%);
 }
 
 .btn-2:hover {
-    color: rgb(255, 158, 79);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    color: hsl(27, 100%, 65%);
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.7);
 }
 
 .item-desc {
@@ -563,13 +563,13 @@ code {
     inset-block-end: 3rem;
     inset-inline-start: 0;
     inset-inline-end: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: hsla(0, 0%, 0%, 0.3);
     padding: 1rem;
     text-align: center;
 }
 
 .item-desc h4 {
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
 }
 
 /*about_________________________________________________________*/
@@ -584,7 +584,7 @@ code {
 }
 
 #about {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: hsla(0, 0%, 0%, 0.05);
 }
 
 .container>h2 {
@@ -605,13 +605,13 @@ code {
 }
 
 .about-col1 {
-    background-color: rgba(255, 206, 198, 0.3);
-    border-inline-start: 6px solid rgb(249, 71, 71);
+    background-color: hsla(8, 100%, 89%, 0.3);
+    border-inline-start: 6px solid hsl(0, 94%, 63%);
 }
 
 .about-col2 {
-    background-color: rgba(194, 255, 191, 0.2);
-    border-inline-start: 6px solid rgb(39, 155, 23);
+    background-color: hsla(117, 100%, 87%, 0.2);
+    border-inline-start: 6px solid hsl(113, 74%, 35%);
 }
 
 .flexWrap {
@@ -624,18 +624,18 @@ code {
 }
 
 .about-col3 {
-    background-color: rgba(207, 191, 255, 0.3);
-    border-inline-start: 6px solid rgb(87, 89, 245);
+    background-color: hsla(255, 100%, 87%, 0.3);
+    border-inline-start: 6px solid hsl(239, 89%, 65%);
 }
 
 .about-col1 .btn,
 .about-col2 .btn,
 .about-col3 .btn {
     inline-size: fit-content;
-    background-color: rgba(128, 195, 240, 0.9);
+    background-color: hsla(204, 79%, 72%, 0.9);
     color: var(--primary-color, var(--primary-color-backup));
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
 }
 
 .about-col1 .btn:hover,
@@ -715,10 +715,10 @@ address {
     padding: 0.8rem;
     margin-inline-start: auto;
     margin-inline-end: auto;
-    border: 1px solid black;
+    border: 1px solid hsl(0, 0%, 0%);
     border-radius: 25px;
     inline-size: clamp(15ch, max(30vw, 35ch), 30vw);
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -801,7 +801,7 @@ address {
     .section2 {
         padding: 8rem 5rem 4rem;
         background-color: var(--color-3);
-        outline: 1px solid black;
+        outline: 1px solid hsl(0, 0%, 0%);
         outline-offset: -3rem;
         position: relative;
         margin: 0.8rem auto auto;
